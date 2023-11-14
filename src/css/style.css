@@ -22,7 +22,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   font-size: var(--font-base);
-  color: var(--english-violet);
+  color: var(--tertiary-color);
 }
 img {
   max-width: 100%;
