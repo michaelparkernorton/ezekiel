@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
   --font-body: Arial, Helvetica, sans-serif;
-  --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-headline: 'Poppins', sans-serif;
   /* colors */
-  --primary-color: #f0a868;
+  --primary-color: #412234;
   --secondary-color: #525b0f;
-  --tertiary-color: #a4b8c4;
+  --tertiary-color: black;
   --light-grey: #d0d0d0;
-  --dark-grey: #303030;
+  --english-violet: #6D466B;
 
   /* sizes */
   --font-base: 18px;
@@ -20,7 +22,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   font-size: var(--font-base);
-  color: var(--dark-grey);
+  color: var(--english-violet);
 }
 img {
   max-width: 100%;
@@ -131,7 +133,7 @@ button {
 }
 .product-list a {
   text-decoration: none;
-  color: var(--dark-grey);
+  color: var(--english-violet);
 }
 /* Styles for product lists */
 .product-card {
