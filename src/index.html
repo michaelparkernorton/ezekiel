@@ -38,27 +38,52 @@
             <div class="progress-bar light-green">
               <div class="progress green"></div>
             </div>
-            <div class="donation-amount"><span class="bold">$250</span></div>
+            <div class="donation-amount"><span class="bold" data-donations-total></span></div>
             <div class="goal"><span class="text"> raised of $2,000 goal <span class="dot">•</span></span></div>
-            <div class="donations"><span class="bold">5</span><span class="text"> donations</span></div>
+            <div class="donations"><span class="bold" data-donations-count></span><span class="text"> donations</span></div>
           </div>
           <div class="buttons">
             <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/share"><div class="share-button button">Share</div></a>
             <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/donate"><div class="donate-button button">Donate</div></a>
           </div>
-          
+          <section class="donation-section-lg">
+            <div class="donors-count" data-donor-count-lg></div>
+            <div class="donors" data-donor-cards-container-lg></div>
+          </section>
         </div>
-        
+        <div class="horizontal-line line-3"></div>
         <section class="mission">
           <p>Life has presented me with challenges, but I've always strived to turn adversity into opportunity. I lost my dad at eight years old. My siblings and I were raised by a loving, hardworking mother. I have witnessed firsthand what it means to keep grinding on despite scarce resources from my mother. She managed to see my younger brother and me through high school but was unable to help us go to college because of a lack of resources. </p>
           <p>Amid life's trials, I've been gifted with a burning passion to get a higher education. This is more than just a personal endeavor—it's a mission to better contribute to society. The road to achieving this vision has not been easy. I've dedicated countless hours, and sleepless nights, and poured every ounce of energy into making this dream a reality. </p>
           <p>Your support, whether through donations or by sharing my campaign, will make a significant difference. Let's unite in this endeavor to create positive change. Thank you.</p>
           <p>- Ezekiel</p>
         </section>
+        <div class="horizontal-line line-1"></div>
+        <section class="donation-section-sm">
+          <div class="donors-count" data-donor-count-sm></div>
+          <div class="donors" data-donor-cards-container-sm></div>
+        </section>
+        <div class="horizontal-line line-2"></div>
+        <template data-donor-template>
+          <div class="donor">
+            <img src="images/heart.png" alt="" data-image>
+            <div class="donor-information">
+              <div class="donor-name" data-donor-name></div>
+              <ul>
+                <li class="donor-amount" data-donor-amount><li>
+                <li class="donor-date" data-donor-date></li>
+              </ul>
+            </div>
+          </div>
+        </template>
+        
+        
         
       </div>
       
     </main>
-    <footer>&copy; HelpEzekil 2023</footer>
+    <div class="horizontal-line line-4"></div>
+
+    <footer>&copy; HelpEzekiel 2023</footer>
   </body>
 </html>
