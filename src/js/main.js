@@ -22,14 +22,12 @@ function renderDonors(container) {
     const name = card.querySelector("[data-donor-name]");
     const amount = card.querySelector("[data-donor-amount]");
     const date = card.querySelector("[data-donor-date]");
-    const img = card.querySelector("[data-heart-image]");
     const today = new Date();
     const donationDate = new Date(donor.date);
     const dayCount = (today - donationDate) / 1000 / 60 / 60 / 24;
     name.textContent = donor.name;
     amount.textContent = "$" + donor.amount;
     date.textContent = dayCount.toFixed() + " d";
-    // img.src = "images/heart.png";
     container.append(card);
   });
 }
