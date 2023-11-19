@@ -29,7 +29,7 @@ function renderDonors(container) {
     name.textContent = donor.name;
     amount.textContent = "$" + donor.amount;
     date.textContent = dayCount.toFixed() + " d";
-    img.src = "https://picsum.photos/200/300";
+    img.src = "./images/heart.png";
     container.append(card);
   });
 }
