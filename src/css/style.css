@@ -157,7 +157,7 @@ h1 {
   border-radius: 0.125rem;
 }
 
-.goal {
+.donation-amount, .goal {
   padding-right: 3px;
 }
 
