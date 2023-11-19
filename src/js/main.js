@@ -3,9 +3,13 @@ import donors from "../json/donations.json" assert { type: "json" };
 const donorCardTemplate = document.querySelector("[data-donor-template]");
 const donationsTotalElement = document.querySelector("[data-donations-total]");
 const donationsCountElement = document.querySelector("[data-donations-count]");
-const donorCardContainerSm = document.querySelector("[data-donor-cards-container-sm]");
+const donorCardContainerSm = document.querySelector(
+  "[data-donor-cards-container-sm]"
+);
 const donorCountElementSm = document.querySelector("[data-donor-count-sm]");
-const donorCardContainerLg = document.querySelector("[data-donor-cards-container-lg]");
+const donorCardContainerLg = document.querySelector(
+  "[data-donor-cards-container-lg]"
+);
 
 let count = 0;
 let donationTotal = 0;
@@ -25,7 +29,7 @@ function renderDonors(container) {
     name.textContent = donor.name;
     amount.textContent = "$" + donor.amount;
     date.textContent = dayCount.toFixed() + " d";
-    img.src = '/images/heart.png';
+    img.src = "https://picsum.photos/200/300";
     container.append(card);
   });
 }
@@ -33,8 +37,8 @@ function renderDonors(container) {
 renderDonors(donorCardContainerSm);
 renderDonors(donorCardContainerLg);
 
-count = count/2;
-donationTotal = donationTotal/2;
+count = count / 2;
+donationTotal = donationTotal / 2;
 
 donorCountElementSm.textContent = "Donations (" + count + ")";
 donationsTotalElement.textContent = "$" + donationTotal;
