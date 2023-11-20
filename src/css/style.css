@@ -283,6 +283,10 @@ footer {
   display: none;
 }
 
+iframe {
+  height: 214px;
+}
+
 @media screen and (min-width: 500px) {
 
   .mission {
@@ -291,6 +295,10 @@ footer {
   .cart-card {
     font-size: inherit;
     grid-template-columns: 150px auto 15%;
+  }
+
+  iframe {
+    height: 395px;
   }
 
 }
