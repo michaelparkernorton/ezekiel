@@ -11,6 +11,25 @@ const donorCardContainerLg = document.querySelector(
   "[data-donor-cards-container-lg]"
 );
 
+
+
+const YouTubeElement = document.querySelector("[data-youtube]")
+let youTubeWidth;
+let youTubeHeight;
+
+function youTubeVideoHeight() {
+  youTubeWidth = window.getComputedStyle(YouTubeElement).width;
+  youTubeHeight = parseInt(youTubeWidth)*9/16
+  YouTubeElement.style.height = youTubeHeight + "px";
+}
+
+youTubeVideoHeight();
+
+window.onresize = function() {
+  youTubeVideoHeight();
+};
+
+
 let count = 0;
 let donationTotal = 0;
 
