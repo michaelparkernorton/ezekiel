@@ -287,6 +287,10 @@ iframe {
   height: 214px;
 }
 
+body:hover .bottom-buttons {
+  opacity: 0;
+}
+
 .bottom-buttons {
   bottom: 0;
   position: sticky;
@@ -296,6 +300,14 @@ iframe {
   padding: 15px;
   margin: 0;
   background-color: white;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  transform: translateY(150px);
+}
+
+.bottom-buttons.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .bottom-buttons .share-button {
@@ -306,9 +318,12 @@ iframe {
   grid-column: 2;
 }
 
-.inactive {
-  display: none;
-  /* background-color: red; */
+.bottom-buttons>.button>a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 500px) {
