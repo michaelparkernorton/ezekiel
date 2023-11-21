@@ -287,6 +287,30 @@ iframe {
   height: 214px;
 }
 
+.bottom-buttons {
+  bottom: 0;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  column-gap: 10px;
+  padding: 15px;
+  margin: 0;
+  background-color: white;
+}
+
+.bottom-buttons .share-button {
+  grid-column: 1;
+}
+
+.bottom-buttons .donate-button {
+  grid-column: 2;
+}
+
+.inactive {
+  display: none;
+  /* background-color: red; */
+}
+
 @media screen and (min-width: 500px) {
 
   .mission {
@@ -435,6 +459,10 @@ iframe {
     display:block;
     margin: 0;
     grid-column: 1 / span 3;
+  }
+
+  .bottom-buttons {
+    display: none;
   }
 
 }

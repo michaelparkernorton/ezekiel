@@ -1,62 +1,23 @@
-import donors from "../json/donations.json" assert { type: "json" };
+import { donationList } from "./donationList.mjs";
+import { reveal } from "./reveal.mjs";
+import { youTubeVideoHeight } from "./youTubeVideoHeight.mjs";
 
-const donorCardTemplate = document.querySelector("[data-donor-template]");
-const donationsTotalElement = document.querySelector("[data-donations-total]");
-const donationsCountElement = document.querySelector("[data-donations-count]");
-const donorCardContainerSm = document.querySelector(
-  "[data-donor-cards-container-sm]"
-);
-const donorCountElementSm = document.querySelector("[data-donor-count-sm]");
-const donorCardContainerLg = document.querySelector(
-  "[data-donor-cards-container-lg]"
-);
-
-
-
-const YouTubeElement = document.querySelector("[data-youtube]")
-let youTubeWidth;
-let youTubeHeight;
-
-function youTubeVideoHeight() {
-  youTubeWidth = window.getComputedStyle(YouTubeElement).width;
-  youTubeHeight = parseInt(youTubeWidth)*9/16
-  YouTubeElement.style.height = youTubeHeight + "px";
-}
-
+donationList();
 youTubeVideoHeight();
+if (window.innerWidth < 1024) {
+  onscroll = (event) => {
+    reveal();
+  };
+}
 
 window.onresize = function() {
   youTubeVideoHeight();
+  if (window.innerWidth < 1024) {
+    onscroll = (event) => {
+      reveal();
+    };
+  }
 };
 
 
-let count = 0;
-let donationTotal = 0;
 
-function renderDonors(container) {
-  donors.forEach((donor) => {
-    count++;
-    donationTotal += parseInt(donor.amount);
-    const card = donorCardTemplate.content.cloneNode(true).children[0];
-    const name = card.querySelector("[data-donor-name]");
-    const amount = card.querySelector("[data-donor-amount]");
-    const date = card.querySelector("[data-donor-date]");
-    const today = new Date();
-    const donationDate = new Date(donor.date);
-    const dayCount = (today - donationDate) / 1000 / 60 / 60 / 24;
-    name.textContent = donor.name;
-    amount.textContent = "$" + donor.amount;
-    date.textContent = dayCount.toFixed() + " d";
-    container.append(card);
-  });
-}
-
-renderDonors(donorCardContainerSm);
-renderDonors(donorCardContainerLg);
-
-count = count / 2;
-donationTotal = donationTotal / 2;
-
-donorCountElementSm.textContent = "Donations (" + count + ")";
-donationsTotalElement.textContent = "$" + donationTotal;
-donationsCountElement.textContent = count;
