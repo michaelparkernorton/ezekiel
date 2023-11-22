@@ -32,8 +32,15 @@
             <div class="goal"><span class="text"> raised of $2,000 goal <span class="dot">•</span></span></div>
             <div class="donations"><span class="bold" data-donations-count></span><span class="text"> donations</span></div>
           </div>
+          <div class="overlay"></div>
           <div class="buttons watch">
-            <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/share"><div class="share-button button">Share</div></a>
+            <button class="share-button button" id="shareButton">Share</button>
+            <div id="overlay"></div>
+            <div class="sharePopUp">
+                <p>リンクは後日追加されます。</p>
+                <button id="popUpDoneBtn">Done</button>
+            </div>
+            <!-- <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/share"><div class="share-button button">Share</div></a> -->
             <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/donate"><div class="donate-button button">Donate</div></a>
           </div>
           <section class="donation-section-lg">
@@ -72,8 +79,14 @@
     <div class="horizontal-line line-4"></div>
     <footer>&copy; HelpEzekiel 2023</footer>
     <div class="buttons bottom-buttons">
-      <div class="share-button button">
+      <!-- <div class="share-button button">
         <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/share">Share</a>
+      </div> -->
+      <button class="share-button button" id="shareButton">Share</button>
+      <div id="overlay"></div>
+      <div class="sharePopUp">
+          <p>リンクは後日追加されます。</p>
+          <button id="popUpDoneBtn">Done</button>
       </div>
       <div class="donate-button button">
         <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/donate">Donate</a>

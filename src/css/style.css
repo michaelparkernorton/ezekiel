@@ -20,6 +20,11 @@
   margin: 0;
 }
 
+/* This allows scrolling by default, but in order to lock the screen when the pop up is present, this code needs to be imbedded. */
+body{
+  overflow: auto;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -61,8 +66,8 @@ header {
 .logo a {
   color: var(--font-body);
 }
-.hero {
-}
+/* .hero {
+} */
 
 .logo--square {
   font-size: var(--small-font);
@@ -98,6 +103,7 @@ button {
   border: 0;
   font-size: var(--large-font);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 main.divider {
@@ -185,12 +191,14 @@ h1 {
   color: #333;
 }
 
-.share-button {
+.share-button, #popUpDoneBtn {
   background: linear-gradient(180deg,#f9db74,#f3bc51);
+  color:black;
 }
 
-.share-button:hover {
+.share-button:hover, #popUpDoneBtn:hover {
   background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
+  color:black;
 }
 
 .donate-button {
@@ -326,6 +334,35 @@ body:hover .bottom-buttons {
   align-items: center;
 }
 
+/* This is for the PopUp window for the share button */
+
+/* This makes the background black when you click on the popup */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  z-index: 1; /* Place the overlay below the pop-up */
+}
+
+.sharePopUp {
+  display: none; /* This is what keeps this from being shown at all times */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust the width based on your design */
+  max-width: 400px; /* Set a maximum width if needed */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2; /* This just ensures that this stays on top of EVERY other element */
+}
+
 @media screen and (min-width: 500px) {
 
   .mission {
@@ -340,6 +377,9 @@ body:hover .bottom-buttons {
     height: 395px;
   }
 
+  .sharePopUp{
+    width: 90%; /* This helps adjust for smaller screen sizes */
+  }
 }
 
 @media screen and (min-width: 1024px) {
