@@ -215,8 +215,6 @@ h1 {
 /* End tracker styles */
 
 .mission {
-  /* padding: 0 0.5em; */
-  /* margin: 0.5em 0; */
   line-height: 1.3;
   margin: auto;
   font-size: 15px;
@@ -522,3 +520,24 @@ body:hover .bottom-buttons {
 
 }
 
+/* This is for the mission preview, and full text */
+
+.missionPreview p, .fullMission p {
+  /* This adds space between lines */
+  margin-bottom: 1.5vh;
+  transition: opacity 0.5s ease;
+}
+
+.readMore, .readLess {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.readLess{
+  display: none;
+}
+
+.readMore:hover, .readLess:hover {
+  text-decoration: none;
+}
