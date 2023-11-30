@@ -2,7 +2,7 @@ document.getElementById('shareButton').addEventListener('click', openPopUp);
 document.getElementById('popUpDoneBtn').addEventListener('click', closePopUp);
 
 var popUp = document.querySelector('.sharePopUp');
-var overlay = document.getElementById('overlay')
+var overlay = document.getElementById('overlay');
 
 export function openPopUp() {
     overlay.style.display = 'block';

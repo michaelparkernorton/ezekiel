@@ -1,7 +1,8 @@
 import { donationList } from "./donationList.mjs";
 import { reveal } from "./reveal.mjs";
 import { youTubeVideoHeight } from "./youTubeVideoHeight.mjs";
-import { openPopUp, closePopUp } from "./popup.js"
+import { openPopUp, closePopUp } from "./popup.js";
+import { readMore, readLess } from "./readMore.js"
 
 donationList();
 youTubeVideoHeight();
@@ -22,4 +23,5 @@ window.onresize = function() {
 
 openPopUp();
 closePopUp();
-
+readMore();
+readLess();
