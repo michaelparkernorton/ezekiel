@@ -25,9 +25,14 @@ function renderDonors(container) {
 		const today = new Date();
 		const donationDate = new Date(donor.date);
 		const dayCount = (today - donationDate) / 1000 / 60 / 60 / 24;
+		
 		name.textContent = donor.name;
 		amount.textContent = "$" + donor.amount;
-		date.textContent = dayCount.toFixed() + " d";
+		if (dayCount < 31) {
+			date.textContent = dayCount.toFixed() + " d";
+		} else {
+			date.textContent = (dayCount/30).toFixed() + " mo";
+		}
 		container.append(card);
 	});
 	return count;
