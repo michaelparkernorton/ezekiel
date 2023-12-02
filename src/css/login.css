@@ -18,7 +18,7 @@
     width: 90%;
     max-width: 450px;
     position: absolute;
-    top: 15%;
+    /* top: 0%; */
     left: 50%;
     transform: translate(-50%, 50%);
     background: #fff;
@@ -71,7 +71,7 @@ input{
 form p {
     padding-top: 0px;
     padding-left: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     text-align: left;
     font-size: 13px;
 }
@@ -84,7 +84,7 @@ form p a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;

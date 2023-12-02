@@ -31,6 +31,7 @@ a {
   color: var(--tertiary-color);
 }
 
+
 .horizontal-line {
   border-top: 1px solid #c8c8c8;
   margin: 1rem 0;
@@ -47,15 +48,19 @@ img {
 }
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 10px;
 }
+
 .logo {
   line-height: 60px;
   width: 245px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 30px;
   font-family: var(--font-headline);
 }
@@ -64,8 +69,19 @@ header {
   height: 60px;
 }
 .logo a {
+  display: inline-block;
   color: var(--font-body);
 }
+.login{
+  /* margin-right: auto; */
+  margin-left: auto;
+  color: #02A95C;
+}
+ .login:hover{
+  border: #333;
+  color: #a90205;
+} 
+
 /* .hero {
 } */
 
