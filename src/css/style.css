@@ -360,6 +360,17 @@ body:hover .bottom-buttons {
   z-index: 2; /* This just ensures that this stays on top of EVERY other element */
 }
 
+.venmo {
+  width: 100px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
 @media screen and (min-width: 500px) {
 
   .mission {
@@ -499,6 +510,9 @@ body:hover .bottom-buttons {
   }
 
   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin: 1rem 3rem;
     margin-top: 0;
     padding: 0;
