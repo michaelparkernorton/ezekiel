@@ -1,7 +1,7 @@
 import { donationList } from "./donationList.mjs";
 import { reveal } from "./reveal.mjs";
 import { youTubeVideoHeight } from "./youTubeVideoHeight.mjs";
-import { openPopUp, closePopUp, copyToClip } from "./popup.js";
+import { openPopUp, closePopUp } from "./popup.js";
 import { readMore, readLess } from "./readMore.js"
 donationList();
 youTubeVideoHeight();
