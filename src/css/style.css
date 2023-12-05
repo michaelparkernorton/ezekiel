@@ -206,12 +206,12 @@ h1 {
   color: #333;
 }
 
-.share-button, #popUpDoneBtn {
+.share-button, #popUpDoneBtn, #copyButton {
   background: linear-gradient(180deg,#f9db74,#f3bc51);
   color:black;
 }
 
-.share-button:hover, #popUpDoneBtn:hover {
+.share-button:hover, #popUpDoneBtn:hover, #copyButton:hover {
   background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
   color:black;
 }
@@ -363,11 +363,12 @@ body:hover .bottom-buttons {
 
 .sharePopUp {
   display: none; /* This is what keeps this from being shown at all times */
+  text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%; /* Adjust the width based on your design */
+  width: 50%; /* Adjust the width based on your design */
   max-width: 400px; /* Set a maximum width if needed */
   padding: 20px;
   border-radius: 10px;
@@ -568,4 +569,15 @@ body:hover .bottom-buttons {
 
 .readMore:hover, .readLess:hover {
   text-decoration: none;
+}
+
+/* This is for the copy to clipboard button and whatnot */
+
+#copyButton{
+  margin-bottom: 1vh;
+}
+
+.sharePopUp button{
+  /* margin-left: 100vh; */
+  margin: 0 auto;
 }
