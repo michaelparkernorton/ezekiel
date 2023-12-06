@@ -3,7 +3,6 @@ import { reveal } from "./reveal.mjs";
 import { youTubeVideoHeight } from "./youTubeVideoHeight.mjs";
 import { openPopUp, closePopUp } from "./popup.js";
 import { readMore, readLess } from "./readMore.js"
-
 donationList();
 youTubeVideoHeight();
 if (window.innerWidth < 1024) {
