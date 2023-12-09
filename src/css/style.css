@@ -82,9 +82,6 @@ header {
   color: #a90205;
 } 
 
-/* .hero {
-} */
-
 .logo--square {
   font-size: var(--small-font);
   width: 110px;
@@ -110,25 +107,12 @@ header {
   color: var(--english-violet);
 }
 
-button {
-  padding: 0.5em 2em;
-  background-color: var(--secondary-color);
-  color: white;
-  display: block;
-  border: 0;
-  font-size: var(--large-font);
-  cursor: pointer;
-  border-radius: 10px;
-}
-
 main.divider {
   margin: 1rem;
   margin-top: 0;
 }
 
 .container, .mission, .buttons, .sidebar {
-  /* grid-area: collage;
-  row-gap: 10px; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -136,22 +120,6 @@ main.divider {
 }
 
 /* End utility classes */
-
-/* Cart icon styles */
-.cart {
-  padding-top: 1em;
-  position: relative;
-  text-align: center;
-}
-
-.cart svg {
-  width: 25px;
-}
-.cart:hover svg {
-  fill: gray;
-}
-
-/* End cart icon styles */
 
 h1 {
   font-family: var(--font-headline);
@@ -191,37 +159,6 @@ h1 {
 .text {
   font-size: 14px;
   color: gray;
-}
-
-.buttons {
-  margin: 10px 0;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border-radius: 10px;
-  color: #333;
-}
-
-.share-button, #popUpDoneBtn, #copyButton {
-  background: linear-gradient(180deg,#f9db74,#f3bc51);
-  color:black;
-}
-
-.share-button:hover, #popUpDoneBtn:hover, #copyButton:hover {
-  background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
-  color:black;
-}
-
-.donate-button {
-  background: linear-gradient(180deg,#fdb933,#f99a32);
-}
-
-.donate-button:hover {
-  background: linear-gradient(180deg,#f99a32 50.52%,#fdb933);
 }
 
 .donation-amount, .donations {
@@ -308,47 +245,6 @@ iframe {
   height: 214px;
 }
 
-body:hover .bottom-buttons {
-  opacity: 0;
-}
-
-.bottom-buttons {
-  bottom: 0;
-  position: sticky;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  column-gap: 10px;
-  padding: 15px;
-  margin: 0;
-  background-color: white;
-  opacity: 0;
-  transition: .5s ease-in-out;
-  transform: translateY(150px);
-}
-
-.bottom-buttons.active {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.bottom-buttons .share-button {
-  grid-column: 1;
-}
-
-.bottom-buttons .donate-button {
-  grid-column: 2;
-}
-
-.bottom-buttons>.button>a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-/* This is for the PopUp window for the share button */
-
 /* This makes the background black when you click on the popup */
 #overlay {
   display: none;
@@ -388,167 +284,6 @@ body:hover .bottom-buttons {
   width: 200px;
 }
 
-@media screen and (min-width: 500px) {
-
-  .mission {
-    font-size: 16px;
-  }
-  .cart-card {
-    font-size: inherit;
-    grid-template-columns: 150px auto 15%;
-  }
-
-  iframe {
-    height: 395px;
-  }
-
-  .sharePopUp{
-    width: 90%; /* This helps adjust for smaller screen sizes */
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    row-gap: 20px;
-  }
-  header, main, footer {
-    grid-column: 2;
-  }
-
-  main, footer {
-    max-width: 1080px;
-    margin: auto;
-  }
-
-  header.divider {
-    margin-top: 10px;
-  }
-  main.divider {
-    margin: 1rem 3rem;
-    margin-bottom: 0;
-  }
-
-  .container {
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
-  }
-
-  div.container h1 {
-    grid-area: 1/1/2/3;
-    font-size: 38px;
-  }
-
-  div.hero {
-    grid-column: 1;
-    grid-row: 2;
-    order: 1;
-  }
-
-
-  .sidebar {
-    grid-column: 2;
-    grid-row: 2 / span 2;
-    border-radius: 0.75rem;
-    box-shadow: 0 0.3125rem 1rem -0.1875rem #0003;
-    padding: 1.5rem;
-    display: block;
-  }
-
-  .donation-section {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .tracker {
-    align-items: space-between;
-    height: 90px;
-  }
-
-  .progress-bar {
-    order: 2;
-  }
-  .donations {
-    order: 3
-  }
-
-  div.progress-stats {
-    grid-row: 1;
-  }
-
-  .donation-amount {
-    font-size: 24px;
-  }
-
-
-  div.donations span.bold {
-    font-weight: normal;
-    color: gray;
-  }
-
-  .dot {
-    display: none;
-  }
-
-  .parallax {
-    top: 1rem;
-    position: sticky;
-  }
-
-  /* Start Donor Styles */
-
-  .donors {
-    margin-top: 15px;
-  }
-
-  .donation-section-sm {
-    display: none;
-  }
-
-  .donation-section-lg {
-    display: grid;
-    row-gap: 20px;
-  }
-
-  .donors-count {
-    display: none;
-  }
-
-  .mission {
-    grid-area: 3/1;
-    margin: 5px;
-    line-height: 27px;
-  }
-
-  .line-1, .line-2, .line-3 {
-    display: none;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 1rem 3rem;
-    margin-top: 0;
-    padding: 0;
-    font-size: 16px;
-    color: gray;
-  }
-
-  .line-4 {
-    display:block;
-    margin: 0;
-    grid-column: 1 / span 3;
-  }
-
-  .bottom-buttons {
-    display: none;
-  }
-
-}
-
 /* This is for the mission preview, and full text */
 
 .missionPreview p, .fullMission p {
@@ -557,68 +292,7 @@ body:hover .bottom-buttons {
   transition: opacity 0.5s ease;
 }
 
-.readMore, .readLess {
-  background-color: white;
-  color: black;
-  text-decoration: underline;
-}
-
-.readLess{
-  display: none;
-}
-
-.readMore:hover, .readLess:hover {
-  text-decoration: none;
-}
-
-/* This is for the copy to clipboard button and whatnot */
-
-#copyButton{
-  margin-bottom: 1vh;
-}
-
-.sharePopUp button{
-  /* margin-left: 100vh; */
-  margin: 0 auto;
-}
-
-/* This is for the two buttons that will link to other pages, at the top */
-.topButtons{
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  margin: 0 auto;
-}
-
-.topButtons button {
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(70,70,70);
-  background:none;
-  padding: 5px 10px;
-  margin: 5px;
-  border: none;
-  font-size: 16px;
-  border-radius: 5px;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.topButtons button::after{
-  content: '';
-  position: absolute;
-  width:100%;
-  height: .175rem;
-  left:0;
-  bottom:0;
-  background: rgb(70,70,70);
-  transform: scale(0,1);
-  transition: transform .2s ease;
-}
-.topButtons button:hover::after{
-  transform: scale(1,1);
-}
-
+/* This is for the FAQ page, since there is no other CSS I just added the 3 lines here */
 .faqh3{
   margin-bottom:2vh;
 }

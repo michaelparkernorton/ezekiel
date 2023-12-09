@@ -1,0 +1,141 @@
+button {
+  padding: 0.5em 2em;
+  background-color: var(--secondary-color);
+  color: white;
+  display: block;
+  border: 0;
+  font-size: var(--large-font);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.share-button, #popUpDoneBtn, #copyButton {
+  background: linear-gradient(180deg,#f9db74,#f3bc51);
+  color:black;
+}
+
+.share-button:hover, #popUpDoneBtn:hover, #copyButton:hover {
+  background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
+  color:black;
+}
+
+.donate-button {
+  background: linear-gradient(180deg,#fdb933,#f99a32);
+}
+
+.donate-button:hover {
+  background: linear-gradient(180deg,#f99a32 50.52%,#fdb933);
+}
+
+body:hover .bottom-buttons {
+  opacity: 0;
+}
+
+.bottom-buttons {
+  bottom: 0;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  column-gap: 10px;
+  padding: 15px;
+  margin: 0;
+  background-color: white;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  transform: translateY(150px);
+}
+
+.bottom-buttons.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.bottom-buttons .share-button {
+  grid-column: 1;
+}
+
+.bottom-buttons .donate-button {
+  grid-column: 2;
+}
+
+.bottom-buttons>.button>a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* This is for the main message, to read more or read less */
+.readMore, .readLess {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.readLess{
+  display: none;
+}
+
+.readMore:hover, .readLess:hover {
+  text-decoration: none;
+}
+
+
+/* This is for the copy to clipboard button and whatnot */
+
+#copyButton{
+  margin-bottom: 1vh;
+}
+
+.sharePopUp button{
+  margin: 0 auto;
+}
+
+/* This is for the two buttons that will link to other pages, at the top */
+.topButtons{
+  display: flex;
+  margin: 0 auto;
+}
+
+.topButtons button {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(70,70,70);
+  background:none;
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.topButtons button::after{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: .175rem;
+  left:0;
+  bottom:0;
+  background: rgb(70,70,70);
+  transform: scale(0,1);
+  transition: transform .2s ease;
+}
+.topButtons button:hover::after{
+  transform: scale(1,1);
+}
