@@ -258,6 +258,10 @@ h1 {
   border: 1px #333 solid;
 }
 
+.see-all-button:hover {
+  background-color: #F5F5F5;
+}
+
 .donors-count {
   font-size: 20px;
   font-weight: 600;
@@ -531,3 +535,4 @@ main .horizontal-line{
   margin-top: 15px;
   color: rgb(79, 79, 79);
 }
+
