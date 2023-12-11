@@ -1,8 +1,12 @@
 import { donationList } from "./mjs/donationList.mjs";
 import { reveal } from "./mjs/reveal.mjs";
 import { youTubeVideoHeight } from "./mjs/youTubeVideoHeight.mjs";
-import { openPopUp, closePopUp } from "./mjs/popup.mjs";
+import "./mjs/popup.mjs";
+import "./mjs/seeAll.mjs";
+import "./mjs/share.mjs";
 import { readMore, readLess } from "./mjs/readMore.mjs"
+
+import {  } from "module";
 donationList();
 youTubeVideoHeight();
 if (window.innerWidth < 1024) {
@@ -20,7 +24,5 @@ window.onresize = function() {
   }
 };
 
-openPopUp();
-closePopUp();
 readMore();
 readLess();
