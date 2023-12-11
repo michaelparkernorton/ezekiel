@@ -1,8 +1,8 @@
-import { donationList } from "./donationList.mjs";
-import { reveal } from "./reveal.mjs";
-import { youTubeVideoHeight } from "./youTubeVideoHeight.mjs";
-import { openPopUp, closePopUp } from "./popup.js";
-import { readMore, readLess } from "./readMore.js"
+import { donationList } from "./mjs/donationList.mjs";
+import { reveal } from "./mjs/reveal.mjs";
+import { youTubeVideoHeight } from "./mjs/youTubeVideoHeight.mjs";
+import { openPopUp, closePopUp } from "./mjs/popup.mjs";
+import { readMore, readLess } from "./mjs/readMore.mjs"
 donationList();
 youTubeVideoHeight();
 if (window.innerWidth < 1024) {
