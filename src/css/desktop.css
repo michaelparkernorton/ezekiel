@@ -1,0 +1,135 @@
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  header, main, footer {
+    grid-column: 2;
+  }
+
+  main, footer, header {
+    max-width: 1080px;
+  }
+  main.divider {
+    margin-bottom: 0;
+  }
+
+  .container {
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+  }
+
+  div.container h1 {
+    grid-area: 1/1/2/3;
+    font-size: 38px;
+  }
+
+  div.hero {
+    grid-column: 1;
+    grid-row: 2;
+    order: 1;
+    height: 395.44px;
+  }
+
+
+  .sidebar {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.3125rem 1rem -0.1875rem #0003;
+    padding: 1.5rem;
+    display: block;
+  }
+
+  .donation-section {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .tracker {
+    align-items: space-between;
+    height: 90px;
+  }
+
+  .progress-bar {
+    order: 2;
+  }
+  .donations {
+    order: 3
+  }
+
+  div.progress-stats {
+    grid-row: 1;
+  }
+
+  .donation-amount {
+    font-size: 24px;
+  }
+
+
+  div.donations span.bold {
+    font-weight: normal;
+    color: gray;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .parallax {
+    top: 1rem;
+    position: sticky;
+  }
+
+  /* Start Donor Styles */
+
+  .donors {
+    margin-top: 15px;
+  }
+
+  .donation-section-sm {
+    display: none;
+  }
+
+  .donation-section-lg {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  .donors-count {
+    display: none;
+  }
+
+  .mission {
+    grid-area: 3/1;
+    margin: 5px;
+    line-height: 27px;
+  }
+
+  .line-1, .line-2, .line-3 {
+    display: none;
+  }
+
+  footer {
+		flex-direction: row;
+		align-items: center;
+    margin: 3rem 1rem;
+    margin-top: 0;
+    padding: 0;
+    font-size: 16px;
+    color: gray;
+  }
+
+  .line-4 {
+    display:block;
+    margin: 0;
+    grid-column: 1 / span 3;
+  }
+
+  .bottom-buttons {
+    display: none;
+  }
+
+}
