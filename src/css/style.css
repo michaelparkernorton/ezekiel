@@ -254,6 +254,10 @@ h1 {
   display: none;
 }
 
+.see-all-button {
+  border: 1px #333 solid;
+}
+
 .donors-count {
   font-size: 20px;
   font-weight: 600;
@@ -466,6 +470,16 @@ body:hover .bottom-buttons {
   margin: 0 auto;
 }
 
+.line-3, .line-1 {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.line-5 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 /* This is for the two buttons that will link to other pages, at the top */
 .topButtons{
   display: flex;
@@ -514,6 +528,6 @@ main .horizontal-line{
 }
 
 .dateOfCreation{
-  margin-top: 1vh;
+  margin-top: 15px;
   color: rgb(79, 79, 79);
 }

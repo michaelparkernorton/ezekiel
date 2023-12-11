@@ -15,9 +15,8 @@ let count = 0;
 let donationTotal = 0;
 
 function renderDonors(container) {
-	donors.forEach((donor) => {
-		count++;
-		donationTotal += parseInt(donor.amount);
+	for (let index = 0; index < 5; index++) {
+		const donor = donors[index];
 		const card = donorCardTemplate.content.cloneNode(true).children[0];
 		const name = card.querySelector("[data-donor-name]");
 		const amount = card.querySelector("[data-donor-amount]");
@@ -34,7 +33,12 @@ function renderDonors(container) {
 			date.textContent = (dayCount/30).toFixed() + " mo";
 		}
 		container.append(card);
+	}
+	donors.forEach((donor) => {
+		count++;
+		donationTotal += parseInt(donor.amount);
 	});
+		
 	return count;
 }
 
