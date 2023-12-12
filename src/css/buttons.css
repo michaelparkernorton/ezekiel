@@ -82,15 +82,6 @@ body:hover .bottom-buttons {
   align-items: center;
 }
 
-#copyButton{
-  margin-bottom: 1vh;
-}
-
-.sharePopUp button{
-  /* margin-left: 100vh; */
-  margin: 0 auto;
-}
-
 /* This is for the two buttons that will link to other pages, at the top */
 .topButtons{
   display: flex;

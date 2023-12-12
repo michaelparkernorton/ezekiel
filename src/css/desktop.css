@@ -133,4 +133,9 @@
     display: none;
   }
 
+  .sharePopUp {
+    width: 50%;
+    max-width: 600px;
+  }
+
 }
