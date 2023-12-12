@@ -46,9 +46,7 @@ body {
 img {
   max-width: 100%;
 }
-header {
-  margin: 0 10px;
-}
+
 header.divider {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -117,18 +115,6 @@ header.divider {
 /* utility classes */
 .highlight {
   color: var(--english-violet);
-}
-
-button {
-  font-weight: bold;
-  font-family: var(--font-body);
-  border: 0;
-  font-size: var(--font-base);
-  cursor: pointer;
-}
-
-#shareButton {
-  color:#333;
 }
 
 main.divider {
@@ -202,32 +188,7 @@ h1 {
   color: gray;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border-radius: 10px;
-  color: #333;
-}
 
-.share-button, #popUpDoneBtn, #copyButton {
-  background: linear-gradient(180deg,#f9db74,#f3bc51);
-  color:black;
-}
-
-.share-button:hover, #popUpDoneBtn:hover, #copyButton:hover {
-  background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
-  color:black;
-}
-
-.donate-button {
-  background: linear-gradient(180deg,#fdb933,#f99a32);
-}
-
-.donate-button:hover {
-  background: linear-gradient(180deg,#f99a32 50.52%,#fdb933);
-}
 
 .donation-amount, .donations {
   display: inline;
@@ -252,14 +213,6 @@ h1 {
 
 .donation-section-lg {
   display: none;
-}
-
-.see-all-button {
-  border: 1px #333 solid;
-}
-
-.see-all-button:hover {
-  background-color: #F5F5F5;
 }
 
 .donors-count {
@@ -325,74 +278,7 @@ iframe {
   height: 214px;
 }
 
-body:hover .bottom-buttons {
-  opacity: 0;
-}
 
-.bottom-buttons {
-  bottom: 0;
-  position: sticky;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  column-gap: 10px;
-  padding: 15px;
-  margin: 0;
-  background-color: white;
-  opacity: 0;
-  transition: .5s ease-in-out;
-  transform: translateY(150px);
-}
-
-.bottom-buttons.active {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.bottom-buttons .share-button {
-  grid-column: 1;
-}
-
-.bottom-buttons .donate-button {
-  grid-column: 2;
-}
-
-.bottom-buttons>.button>a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-/* This is for the PopUp window for the share button */
-
-/* This makes the background black when you click on the popup */
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
-  z-index: 1; /* Place the overlay below the pop-up */
-}
-
-.sharePopUp {
-  display: none; /* This is what keeps this from being shown at all times */
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%; /* Adjust the width based on your design */
-  max-width: 400px; /* Set a maximum width if needed */
-  padding: 20px;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 2; /* This just ensures that this stays on top of EVERY other element */
-}
 
 .venmo {
   width: 100px;
@@ -416,28 +302,7 @@ body:hover .bottom-buttons {
   align-items: flex-end;
 }
 
-@media screen and (min-width: 500px) {
 
-  body {
-    margin: 0;
-  }
-
-  .mission {
-    font-size: 16px;
-  }
-  .cart-card {
-    font-size: inherit;
-    grid-template-columns: 150px auto 15%;
-  }
-
-  iframe {
-    height: 395px;
-  }
-
-  .sharePopUp{
-    width: 90%; /* This helps adjust for smaller screen sizes */
-  }
-}
 
 
 
@@ -467,16 +332,6 @@ body:hover .bottom-buttons {
   text-decoration: none;
 }
 
-/* This is for the copy to clipboard button and whatnot */
-
-#copyButton{
-  margin-bottom: 1vh;
-}
-
-.sharePopUp button{
-  /* margin-left: 100vh; */
-  margin: 0 auto;
-}
 
 .line-3, .line-1 {
   margin: 0;
@@ -488,42 +343,7 @@ body:hover .bottom-buttons {
   margin-bottom: 10px;
 }
 
-/* This is for the two buttons that will link to other pages, at the top */
-.topButtons{
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  margin: 0 auto;
-}
 
-.topButtons button {
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(70,70,70);
-  background:none;
-  padding: 5px 10px;
-  margin: 5px;
-  border: none;
-  font-size: 16px;
-  border-radius: 5px;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.topButtons button::after{
-  content: '';
-  position: absolute;
-  width:100%;
-  height: .175rem;
-  left:0;
-  bottom:0;
-  background: rgb(70,70,70);
-  transform: scale(0,1);
-  transition: transform .2s ease;
-}
-.topButtons button:hover::after{
-  transform: scale(1,1);
-}
 
 .faqh3{
   margin-bottom:2vh;

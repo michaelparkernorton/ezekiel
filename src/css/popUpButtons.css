@@ -1,0 +1,27 @@
+
+
+#copyButton {
+	background-color: #767676;
+	color: #fff;
+	font-weight: bold;
+	height: 3.125rem;
+	min-width: 7rem;
+	align-items: center;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid #0000;
+	border-radius: 0.75rem;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 1rem;
+	font-weight: 700;
+	justify-content: center;
+	line-height: 1;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	text-align: center;
+}
+
+#copyButton:hover {
+
+}
