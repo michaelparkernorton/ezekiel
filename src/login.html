@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta name = "viewport" content ="width=device-width, intial-scale1.0">
@@ -38,4 +38,48 @@
             </div>
         </div>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In or Sign Up</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="https://kit.fontawesome.com/6c603e4985.js" crossorigin="anonymous"></script>
+    <script defer src='./js/login.js' type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" autocomplete="new-password" required>
+                    </div>
+                    <p>Forgot Password? <a href="#" id="forgotPasswordLink">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="submit" class="disable" id="signinBtn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
