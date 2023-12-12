@@ -1,3 +1,5 @@
+// import { importData } from "./fetchHTML.mjs";
+
 document.getElementById('readMoreBtn').addEventListener('click', readMore);
 document.getElementById('readLessBtn').addEventListener('click', readLess);
 
@@ -19,3 +21,4 @@ export function readLess() {
   readLessBtn.style.display = 'none';
   readMoreBtn.style.display = 'block';
 }
+

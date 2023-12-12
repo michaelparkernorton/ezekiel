@@ -10,24 +10,9 @@
     <script defer type="module" src="js/main.js"></script>
   </head>
   <body>
-    <header class="divider">
-      <div class="logo">
-        <a href="index.html"> <span class="highlight">Help</span>Ezekiel</a>
-      </div>
-      <div class="login">
-        <a href="login.html" id="login">
-        <span class="login">Sign Up</span></a>
-      </div>
-    </header>
-    <main class="divider">
-      <div class="topButtons">
-        <a target="_blank" href="https://www.youtube.com/channel/UCL1nKF8Abps9d-gnFiPH6KQ">
-          <button>Videos</button>
-        </a>
-        <a href="faq.html">
-          <button>FAQ</button>
-        </a>
-      </div>
+    <header class="divider header"></header>
+    <main class="divider">  
+      <div class="topButtons"></div>
       <div class="container">
         <div class="hero">
           <iframe width="100%" data-youtube src="https://www.youtube.com/embed/2TkbMFVBjFQ?si=fig2uIrbMk-WAPdG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -71,12 +56,11 @@
           </p>
           <button class="readMore" id="readMoreBtn">Read More</button>
         </div>
-        <div class="fullMission">
-          <div w3-include-html="./partials/hero.html"></div>
-	        <button class="readLess" id="readLessBtn">Read Less</button>
+        <div class="fullMission" >
+          <div class="story"></div>
+        	<button class="readLess" id="readLessBtn">Read Less</button>
         </div>
         <div class="horizontal-line line-1"></div>
-
             <section class="donation-section-sm">
               <div class="donors-count" data-donor-count-sm></div>
               <div class="donors" data-donor-cards-container-sm></div>

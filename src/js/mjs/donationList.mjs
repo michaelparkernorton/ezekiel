@@ -42,7 +42,7 @@ function renderDonors(container) {
 	return count;
 }
 
-export function donationList() {
+function donationList() {
 	renderDonors(donorCardContainerSm);
 	renderDonors(donorCardContainerLg);
 
@@ -54,3 +54,4 @@ export function donationList() {
 	donationsCountElement.textContent = count;	
 }
 
+donationList();
