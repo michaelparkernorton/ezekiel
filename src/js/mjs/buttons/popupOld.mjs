@@ -17,7 +17,6 @@ export function openDonatePopUp() {
     donatePopUp.style.display = 'block';
     document.body.style.overflow = 'hidden'; // Prevent scrolling when the pop-up is open
     document.querySelector('.close-pop-up').addEventListener('click', closePopUp);
-
 }
 
 export function closePopUp() {

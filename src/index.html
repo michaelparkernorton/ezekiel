@@ -6,6 +6,10 @@
     <title>Help Ezekiel</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/desktop.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/css/popUpButtons.css">
+    <link rel="stylesheet" href="/css/mediumScreen.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <script defer type="module" src="js/main.js"></script>
   </head>
@@ -17,9 +21,7 @@
         <div class="hero">
           <iframe width="100%" data-youtube src="https://www.youtube.com/embed/2TkbMFVBjFQ?si=fig2uIrbMk-WAPdG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <h1>
-          Help Ezekiel Continue His University Studies
-        </h1>
+        <h1>Help Ezekiel Continue His University Studies</h1>
         <div class="sidebar parallax">
           <div class="tracker">
             <div class="progress-bar light-green">
@@ -29,17 +31,22 @@
             <div class="goal"><span class="text"> raised of $2,000 goal <span class="dot">•</span></span></div>
             <div class="donations"><span class="bold" data-donations-count></span><span class="text"> donations</span></div>
           </div>
-          <div class="buttons watch">
+          <div class="buttons watch" id="share-donate-buttons">
             <button class="share-button button" id="shareButton">Share</button>
             <div id="overlay"></div>
             <div class="sharePopUp">
-                <span id="textToCopy">https://help-ezekiel.netlify.app/</span>
-                <button id="copyButton">Copy Link To Clipboard</button>
-                <button id="popUpDoneBtn">Done</button>
-              </div>
-              <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/donate"><div class="donate-button button">Donate</div></a>
-              <div class="horizontal-line line-3"></div>
+              <button id="popUpDoneBtn">X</button>
+                <div class="link-button">
+                  <div class="link-container">
+                    <span id="copyLink">Copy Link</span>
+                    <span id="textToCopy">https://help-ezekiel.netlify.app/</span>
+                  </div>
+                  <button id="copyButton">Copy</button>
+                </div>
             </div>
+            <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/donate"><div class="donate-button button">Donate</div></a>
+            <div class="horizontal-line line-3"></div>
+          </div>
             <section class="donation-section-lg">
               <div class="donors-count" data-donor-count-lg></div>
               <div class="donors" data-donor-cards-container-lg></div>
@@ -61,18 +68,18 @@
         	<button class="readLess" id="readLessBtn">Read Less</button>
         </div>
         <div class="horizontal-line line-1"></div>
-            <section class="donation-section-sm">
-              <div class="donors-count" data-donor-count-sm></div>
-              <div class="donors" data-donor-cards-container-sm></div>
-              <div class="see-all-button button">See all</div>
-            </section>
-            <div class="created">
-              <div class="horizontal-line line-5"></div>
-              <p class="dateOfCreation">Created: October 26, 2023</p>
-            </div>
-            <div class="horizontal-line line-2"></div>
-            <template data-donor-template>
-              <div class="donor">
+        <section class="donation-section-sm">
+          <div class="donors-count" data-donor-count-sm></div>
+          <div class="donors" data-donor-cards-container-sm></div>
+          <div class="see-all-button button">See all</div>
+        </section>
+        <div class="created">
+          <div class="horizontal-line line-5"></div>
+          <p class="dateOfCreation">Created: October 26, 2023</p>
+        </div>
+        <div class="horizontal-line line-2"></div>
+        <template data-donor-template>
+          <div class="donor">
             <img src="data:image/png;base64,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" alt="heart" data-heart-image>
             <div class="donor-information">
               <div class="donor-name" data-donor-name></div>
@@ -82,7 +89,7 @@
               </ul>
             </div>
           </div>
-        </template> 
+        </template>
       </div>
     </main>
     <div class="horizontal-line line-4"></div>
@@ -105,9 +112,6 @@
       <img src="/images/heart.png" alt="heart" id="heart">
     </footer>    
     <div class="buttons bottom-buttons">
-      <!-- <div class="share-button button">
-        <a href="https://www.gofundme.com/f/help-ezekiel-continue-his-university-studies/share">Share</a>
-      </div> -->
       <button class="share-button button" id="shareButton">Share</button>
       <div id="overlay"></div>
       <div class="sharePopUp">

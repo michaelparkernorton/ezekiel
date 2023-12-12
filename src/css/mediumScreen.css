@@ -1,0 +1,22 @@
+@media screen and (min-width: 500px) {
+
+  body {
+    margin: 0;
+  }
+
+  .mission {
+    font-size: 16px;
+  }
+  .cart-card {
+    font-size: inherit;
+    grid-template-columns: 150px auto 15%;
+  }
+
+  iframe {
+    height: 395px;
+  }
+
+  .sharePopUp{
+    width: 90%; /* This helps adjust for smaller screen sizes */
+  }
+}
