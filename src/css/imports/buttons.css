@@ -17,12 +17,13 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.share-button {
+.share-button, #donatePopUpDoneBtn {
+  border:none;
   background: linear-gradient(180deg,#f9db74,#f3bc51);
   color:black;
 }
 
-.share-button:hover {
+.share-button:hover, #donatePopUpDoneBtn:hover {
   background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
   color:black;
 }

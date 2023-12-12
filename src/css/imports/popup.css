@@ -44,6 +44,7 @@
   display: none; /* This is what keeps this from being shown at all times */
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
