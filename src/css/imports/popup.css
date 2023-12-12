@@ -40,7 +40,7 @@
   z-index: 1; /* Place the overlay below the pop-up */
 }
 
-.sharePopUp {
+.sharePopUp, .donatePopUp {
   display: none; /* This is what keeps this from being shown at all times */
   flex-direction: column;
   justify-content: space-between;
@@ -54,5 +54,26 @@
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 2; /* This just ensures that this stays on top of EVERY other element */
+}
+
+/* This is for the donation pop up */
+
+.donatePopUp .payment-option{
+  margin: auto;
+}
+.donatePopUp .gofundme{
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+}
+
+#donatePopUpDoneBtn{
+  /* margin-top: 2.5vh; */
+  border-radius: 7px;
+  padding: .5vh 1vh .5vh 1vh;
+}
+
+.donatePopUp .link{
+  color: rgb(97, 186, 216);
+  text-decoration: underline;
 }
 
