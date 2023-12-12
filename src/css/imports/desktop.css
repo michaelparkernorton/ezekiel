@@ -1,3 +1,4 @@
+@import "./largeScreens/popup.css";
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
@@ -133,16 +134,5 @@
     display: none;
   }
 
-  .sharePopUp {
-    width: 50%;
-    height: 200px;
-    max-width: 600px;
-    border-radius: 10px;
-    padding: 20px;
-  }
-
-  #textToCopy {
-    font-size: 16px;
-  }
 
 }

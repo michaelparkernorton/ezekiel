@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import "./imports/home.css";
-@import "./imports/buttons.css";
-@import "./imports/popup.css";
-@import "./imports/popUpButtons.css";
+@import "./imports/mobile.css";
 @import "./imports/mediumScreen.css";
 @import "./imports/desktop.css";
