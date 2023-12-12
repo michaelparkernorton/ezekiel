@@ -25,6 +25,7 @@
 
 #textToCopy {
 	line-height: 1.5;
+  font-size: 14px;
 }
 
 /* This makes the background black when you click on the popup */
@@ -43,14 +44,14 @@
   display: none; /* This is what keeps this from being shown at all times */
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
+  height: 100vh;
+  width: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%; /* Set a maximum width if needed */
-  padding: 20px;
-  border-radius: 10px;
+  padding: 10px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 2; /* This just ensures that this stays on top of EVERY other element */
