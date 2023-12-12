@@ -12,7 +12,7 @@
     "test": "jest"
     
   },
-  "author": "Michael Norton, Wes, Grant",
+  "author": "Grant Willis, Michael Norton, Wes Vane",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.26.0",
