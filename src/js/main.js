@@ -1,8 +1,16 @@
-import "./mjs/donationList.mjs";
-import "./mjs/youTubeVideoHeight.mjs";
-import "./mjs/popup.mjs";
-import "./mjs/seeAll.mjs";
-import "./mjs/share.mjs";
-import "./mjs/readMore.mjs";
-import "./mjs/fetchHTML.mjs"
+import "./mjs/fetchHTML.mjs";
+import "./mjs/donations/donationList.mjs";
+import { youTubeVideoHeight } from "./mjs/features/youTubeVideoHeight.mjs";
+import { revealButtons } from "./mjs/features/revealButtons.mjs";
+import "./mjs/buttons/popup.mjs";
+import "./mjs/buttons/seeAll.mjs";
+import "./mjs/buttons/share.mjs";
+import "./mjs/buttons/readMore.mjs";
 
+onscroll = (event) => {
+  revealButtons();
+}
+
+window.onresize = function() {
+  youTubeVideoHeight();
+};
