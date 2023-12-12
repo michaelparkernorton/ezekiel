@@ -133,4 +133,8 @@
     display: none;
   }
 
+  .sharePopUp {
+    width: 50%; /* Adjust the width based on your design */
+  }
+
 }
