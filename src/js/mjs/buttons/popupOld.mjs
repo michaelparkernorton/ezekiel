@@ -4,7 +4,7 @@ document.getElementById('donateButton').addEventListener('click', openDonatePopU
 document.getElementById('donatePopUpDoneBtn').addEventListener('click', closeDonatePopUp);
 
 let sharePopUp = document.querySelector('.sharePopUp');
-let donatePopUp = document.querySelector('.donatePopUp')
+let donatePopUp = document.querySelector('.donate')
 let overlay = document.getElementById('overlay');
 
 export function openPopUp() {
