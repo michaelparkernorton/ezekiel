@@ -20,11 +20,6 @@
   margin: 0;
 }
 
-/* This allows scrolling by default, but in order to lock the screen when the pop up is present, this code needs to be imbedded. */
-body{
-  overflow: auto;
-}
-
 a {
   text-decoration: none;
   font-weight: bold;

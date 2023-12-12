@@ -17,12 +17,12 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.share-button, #popUpDoneBtn {
+.share-button {
   background: linear-gradient(180deg,#f9db74,#f3bc51);
   color:black;
 }
 
-.share-button:hover, #popUpDoneBtn:hover {
+.share-button:hover {
   background: linear-gradient(180deg,#f3bc51 50%,#f9db74);
   color:black;
 }
