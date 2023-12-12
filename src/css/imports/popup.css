@@ -44,8 +44,6 @@
   display: none; /* This is what keeps this from being shown at all times */
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
-  width: 100vw;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -54,6 +52,10 @@
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 2; /* This just ensures that this stays on top of EVERY other element */
+}
+
+.donatePopUp{
+  border-radius: 10px;
 }
 
 /* This is for the donation pop up */
