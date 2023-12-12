@@ -12,7 +12,7 @@ copyButton.addEventListener('click', copyToClip);
 
 function openShare() {
 	openPopUp();
-	sharePopUp.style.display = 'block';
+	sharePopUp.style.display = 'flex';
 }
 
 function closeShare() {

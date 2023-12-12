@@ -134,7 +134,8 @@
   }
 
   .sharePopUp {
-    width: 50%; /* Adjust the width based on your design */
+    width: 50%;
+    max-width: 600px;
   }
 
 }
