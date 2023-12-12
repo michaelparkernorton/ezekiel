@@ -443,6 +443,10 @@ body:hover .bottom-buttons {
 
 /* This is for the mission preview, and full text */
 
+.fullMission {
+  display: none;
+}
+
 .missionPreview p, .fullMission p {
   /* This adds space between lines */
   margin-bottom: 1.5vh;
